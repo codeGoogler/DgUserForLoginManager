@@ -34,3 +34,5 @@ python manage.py createsuperuser ,按照提示输入用户名，密码，邮箱
 
 
 
+# 解绑一个学习地址
+https://code.ziqiangxuetang.com/django/django-views-urls.html
