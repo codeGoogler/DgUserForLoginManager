@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 
@@ -10,16 +11,17 @@ class BookInfo(models.Model):
     bpub_date = models.DateTimeField()
 
     def __str__(self):
-        print("title： %s ,日期：%s"%(self.btitle,self.bpub_date))
-        return "title： %s ,日期：%s"%(self.btitle,self.bpub_date)
+        print("title： %s ,日期：%s" % (self.btitle, self.bpub_date))
+        return "title： %s ,日期：%s" % (self.btitle, self.bpub_date)
+
 
 class HeroInfo(models.Model):
     hname = models.CharField(max_length=10)
     hgender = models.BooleanField()
     hcontent = models.CharField(max_length=1000)
-    hbook = models.ForeignKey('BookInfo','on_delete=models.CASCADE()')
+    hbook = models.ForeignKey('BookInfo', 'on_delete=models.CASCADE()')
 
     def __str__(self):
-        return  self.hname
+        # return self.hname.encode('utf8')
         # print("title： %s ,日期：%s"%(self.hname,self.hcontent))
-        # return 'title： %s ,内容：%s' % (self.hname, self.hcontent)
+        return 'title： %s ,内容：%s' % (self.hname, self.hcontent)

@@ -1,14 +1,14 @@
 ### django的学习
 
-#### 1.注册项目  
+#### 1.注册项目
 
 **在settings.py里面**
 
-INSTALLED_APPS
+INSTALLED_APPS里面添加
 
 #### 2、生成迁移
 
-python manage.py makemmigrations
+python manage.py makemigrations
 
 #### 4、执行迁移
 
@@ -33,6 +33,13 @@ python manage.py createsuperuser ,按照提示输入用户名，密码，邮箱
 * 进入管路站点，默认可以对groups.users进行 管理
 
 
+**注意**
+```
+后台管理语言设置：
+1.8之前：
+# LANGUAGE_CODE = 'en-us'
+1.8之后
+LANGUAGE_CODE = 'zh-hans'
+```
 
-# 解绑一个学习地址
-https://code.ziqiangxuetang.com/django/django-views-urls.html
+![ ](https://upload-images.jianshu.io/upload_images/14371339-7824cd81fde1f4fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
