@@ -11,8 +11,9 @@ class BookInfo(models.Model):
     bpub_date = models.DateTimeField()
 
     def __str__(self):
-        print("title： %s ,日期：%s" % (self.btitle, self.bpub_date))
-        return "title： %s ,日期：%s" % (self.btitle, self.bpub_date)
+        # print("title： %s ,日期：%s" % (self.btitle, self.bpub_date))
+        # return "title： %s ,日期：%s" % (self.btitle, self.bpub_date)
+        return self.btitle.encode('utf-8')
 
 
 class HeroInfo(models.Model):
@@ -22,6 +23,6 @@ class HeroInfo(models.Model):
     hbook = models.ForeignKey('BookInfo', 'on_delete=models.CASCADE()')
 
     def __str__(self):
-        # return self.hname.encode('utf8')
+        return self.hname.encode('utf-8')
         # print("title： %s ,日期：%s"%(self.hname,self.hcontent))
-        return 'title： %s ,内容：%s' % (self.hname, self.hcontent)
+        # return 'title： %s ,内容：%s' % (self.hname, self.hcontent)
