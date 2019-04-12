@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ list }}</title>
+</head>
+<body>
+    <h3 style="background: #ffffff; height: 100px;color: black" align="center">数据库查询</h3>
+        {% for hreo in list %}
+            <div style="width: 50%;height:100px;background: antiquewhite;align-items: center;justify-items: center;" align="center">
+                姓名：{{hreo.hname}}
+                内容：{{hreo.hcontent}}
+            </div>
+        {% endfor %}
+</body>
+</html>

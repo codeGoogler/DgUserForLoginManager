@@ -21,11 +21,14 @@ from book import views as  book_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('goBook/', views.index),
     path('www/', learn_views.index),
     path('test/', book_view.index),
     url(r'^',include("learn.urls")),
+    url(r'^',include("book.book_url")),
     url(r'^learn/',include("learn.tinyma_urls")),
     url(r'^',include("learn.tinyma_urls")),
-    url(r'^',include("learn.tinymy_urls")),
+    # url(r'^booktest/',include('booktest.urls')),
+    url(r'^',include('booktest.urls')),
+
+
 ]

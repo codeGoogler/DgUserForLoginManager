@@ -32,6 +32,5 @@ class BookInfoAdmin(admin.ModelAdmin):
 
 
 # 向admin注册booktest模型
-
 admin.site.register(BookInfo, BookInfoAdmin)
 admin.site.register(HeroInfo)
