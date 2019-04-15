@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'booktest',
     'book',
     'learn',
-    # 'djangomysql',
+    'djangomysql',
 ]
 
 # Application definition

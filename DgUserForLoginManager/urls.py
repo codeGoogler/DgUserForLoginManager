@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^',include("learn.tinyma_urls")),
     # url(r'^booktest/',include('booktest.urls')),
     url(r'^',include('booktest.urls')),
+    url(r'^',include('djangomysql.urls')),
 
 
 ]
